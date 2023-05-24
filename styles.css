@@ -73,19 +73,24 @@ h1 {
 
 .about__text {
     text-align: center;
-    margin: 4rem 1rem;
+    margin: 2rem 1rem;
     padding: 2rem 0.31rem;
-    line-height: 1.56rem;
     font-size: var(--normal-font-size);
-    gap: 5rem 1rem 2rem 1rem;
+    
 }
 
 .about__text h2 {
     margin: 2rem;
-    font-size: 2.1rem;
+    font-size: var( --h1-font-size);
     letter-spacing: 0.1rem;
+    line-height: 1.56rem;
+    font-weight: var(--font-bold);
 
 
+}
+.about__text p{
+    line-height: 1.56rem;
+    font-weight: var(--font-medium);
 }
 
 
@@ -95,6 +100,7 @@ h1 {
     height: 220px;
     object-fit: cover;
     margin-bottom: 2rem;
+   
 }
 
 .about_btn_box {
@@ -108,7 +114,7 @@ h1 {
 .about__button {
     font-size: var(--normal-font-size);
     color: var(--gray-100);
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
     width: 7.375rem;
     height: 2.4rem;
     outline: none;
@@ -123,3 +129,24 @@ h1 {
     color: var(--black-dark);
     transition: all 0.9s ease-in-out;
 }
+
+
+
+
+
+
+
+@media screen and (max-width:350px ){
+    .about__text h2{
+        line-height: 1.5rem; 
+
+            }
+         
+    
+   
+
+
+    
+   
+
+} 
