@@ -98,5 +98,5 @@ cursor: pointer;
 border: 2px solid var(--primary-color-dark);
 background-color: var(--gray-100);
 color:var(--black-dark) ;
-transition: all 0.9s ease-in-out ;
+transition: all 0.9s ease-in-out;
 }
