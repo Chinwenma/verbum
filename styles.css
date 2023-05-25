@@ -166,11 +166,62 @@ h1 {
 
 
 
-@media screen and (max-width:350px) {
-    .about__text h2 {
-        line-height: 1.5rem;
-
+  .our-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .team-member {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border:2px solid var(--primary-color-dark);
+    border-radius: 50%;
+  }
+  
+  .team-member h3 {
+    margin: 10px 0;
+  }
+  
+  .team-member p {
+    margin: 5px 0;
+  }
+  
+  .social-media a {
+    margin-right: 5px;
+    color: #333;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .team-member {
+      width: 31%;
     }
+  }
+  
+  @media (min-width: 1024px) {
+    .team-member {
+      width: 23%;
+    }
+  }
+  
+  @media (min-width: 1244px) {
+    .team-member {
+      width: 18%;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .team-member {
+      width: 100%;
+    }
+  }
+  
 
 
 
@@ -179,4 +230,6 @@ h1 {
 
 
 
-}
+
+
+
