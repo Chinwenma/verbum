@@ -94,17 +94,21 @@ h1 {
 
 
 }
+
 .about__text h2::before {
     content: "";
     display: block;
     position: absolute;
     top: -50;
-    left:5.9rem; /* Adjust the position as needed */
+    left: 5.9rem;
+    /* Adjust the position as needed */
     height: 1.5rem;
-    width: 5px; /* Adjust the width as needed */
-    background-color:var(--primary-color-dark); /* Adjust the color as needed */
-  }
-  
+    width: 5px;
+    /* Adjust the width as needed */
+    background-color: var(--primary-color-dark);
+    /* Adjust the color as needed */
+}
+
 
 .about__text p {
     line-height: 1.56rem;
@@ -152,84 +156,99 @@ h1 {
     background-color: var(--gray-300);
 }
 
-#core h2::before {
+#core h2 ::before {
     content: "";
     display: block;
     position: absolute;
     top: -50;
-    left:6rem; /* Adjust the position as needed */
+    left: 6rem;
     height: 1.5rem;
-    width: 5px; /* Adjust the width as needed */
-    background-color:var(--primary-color-dark); /* Adjust the color as needed */
-  }
+    width: 2px;
+    background-color: var(--primary-color-dark);
+}
 
 
 
 
-  .our-team {
+.our-team {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .team-member {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.center {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: var(--h1-font-size);
+    letter-spacing: 0.1rem;
+    line-height: 1.56rem;
+    font-weight: var(--font-bold);
+    color: var(--primary-color-dark);
+}
+
+.team-member {
+    text-align: center;
     width: 48%;
     margin-bottom: 20px;
-  }
-  
-  .team-member img {
+    padding: 20px;
+
+}
+.team-member:hover{
+    transition: all 0.9s ease-in-out;
+
+    box-shadow: 0px 0px 3.61212px 1.80606px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.team-member img {
     width: 100%;
     height: auto;
-    border:2px solid var(--primary-color-dark);
+    border: 2px solid var(--primary-color-dark);
     border-radius: 50%;
-  }
-  
-  .team-member h3 {
-    margin: 10px 0;
-  }
-  
-  .team-member p {
+}
+
+.team-member h3 {
     margin: 5px 0;
-  }
-  
-  .social-media a {
+    font-size: var(--h1-font-size)
+}
+
+.team-member p {
+    margin: 5px 0;
+   
+
+}
+
+.social-media a {
     margin-right: 5px;
-    color: #333;
-  }
+    color: hsl(203, 11%, 29%);
+    font-size: 20px;
+
   
-  /* Media Queries */
-  @media (min-width: 768px) {
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
     .team-member {
-      width: 31%;
+        width: 31%;
     }
-  }
-  
-  @media (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1024px) {
     .team-member {
-      width: 23%;
+        width: 23%;
     }
-  }
-  
-  @media (min-width: 1244px) {
+}
+
+@media screen and (min-width: 1244px) {
     .team-member {
-      width: 18%;
+        width: 18%;
     }
-  }
-  
-  @media (max-width: 350px) {
+}
+
+@media screen and (max-width: 350px) {
     .team-member {
-      width: 100%;
+        width: 100%;
     }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
+}
