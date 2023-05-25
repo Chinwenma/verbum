@@ -192,7 +192,11 @@ h1 {
     text-align: center;
     width: 48%;
     margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 20px;
+   
+
 
 }
 .team-member:hover{
