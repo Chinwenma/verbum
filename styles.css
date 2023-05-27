@@ -100,12 +100,6 @@ h1 {
     line-height: 1.56rem;
     font-weight: var(--font-medium);
 }
-#image{ 
-    margin-top: -230px;
-    object-position: center;
-    
-}
-
 
 
 .about__image img {
