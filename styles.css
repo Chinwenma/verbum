@@ -74,7 +74,7 @@ h1 {
 }
 
 .about__text {
-    text-align: center;
+    text-align: justify;
     margin: 2rem 1rem;
     padding: 2rem 0.31rem;
     font-size: var(--normal-font-size);
@@ -88,9 +88,9 @@ h1 {
     font-size: var(--h1-font-size);
     letter-spacing: 0.1rem;
     line-height: 1.56rem;
-    font-weight: var(--font-bold);
     color: var(--primary-color-dark);
-
+    font-weight: var(--font-semi-bold);
+    text-align: center;
 
 }
 
@@ -100,14 +100,20 @@ h1 {
     line-height: 1.56rem;
     font-weight: var(--font-medium);
 }
+#image{ 
+    margin-top: -230px;
+    object-position: center;
+    
+}
 
 
 
-.about__image {
+.about__image img {
     width: 300px;
     height: 220px;
     object-fit: cover;
     margin-bottom: 2rem;
+  
 
 }
 
@@ -124,7 +130,6 @@ h1 {
     text-align: center;
     padding: 10px 20px;
     background-color:var(--primary-color-dark);
-    color: #fff;
     text-decoration: none;
     font-size: var(--normal-font-size);
     color: var(--gray-100);
@@ -138,20 +143,16 @@ h1 {
     cursor: pointer;
     border: 2px solid var(--primary-color-dark);
     background-color: var(--gray-100);
- 
     color: var(--black-dark);
     transition: all 0.9s ease-in-out;
 }
-
-
-
-
 .our-team {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 0 10px;
 }
 
 .center {
@@ -160,7 +161,7 @@ h1 {
     font-size: var(--h1-font-size);
     letter-spacing: 0.1rem;
     line-height: 1.56rem;
-    font-weight: var(--font-bold);
+    font-weight: var(--font-semi-bold);
     color: var(--primary-color-dark);
 }
 
@@ -206,13 +207,22 @@ h1 {
   @media screen and (min-width: 768px) {
     .about__page{
        flex-direction: row;
-       gap: 10px;
+       padding: 2rem;
     }
+    .about__text {
+        flex: 1;
+        margin: 2rem;
+      }
     
     .about__text p{
-       text-align: left;
-       font-size: 18px;
+       text-align: justify;
+       font-size: var(--normal-font-size);
     }
+    .about__image img {
+        width: 400px;
+        height: 280px;
+      }
+    
     .team-member {
       width: 31%;
 
@@ -220,12 +230,27 @@ h1 {
   }
   
   @media screen and (min-width: 1024px) {
+    .about__text {
+        margin: 2rem 4rem;
+      }
+          .about__image img {
+        width: 500px;
+        height: 350px;
+      }
     .team-member {
       width: 23%;
     }
   }
   
   @media screen and  (min-width: 1244px) {
+    .about__text {
+        margin: 2rem 6rem;
+      }
+    
+      .about__image img {
+        width: 600px;
+        height: 420px;
+      }
     .team-member {
       width: 18%;
     }
